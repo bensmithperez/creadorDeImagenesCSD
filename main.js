@@ -8,6 +8,7 @@ var crearImagen = function() {
 	var fondo = document.getElementById("fondo");
 	var usuario = "@comoSeDiceApp"; 
 	var urlCSD = "comosediceapp.com";
+	var colorTexto = document.getElementById("colorTexto").value;
 
 	if (tipo.value == "csd"){
 		var linea1 = "\xbfC\xF3mo se dice";
@@ -41,6 +42,7 @@ var crearImagen = function() {
 
     function imageLoaded() {
         ctx.drawImage(img,0,0,800,800);
+    	ctx.fillStyle = colorTexto;
 		ctx.font = "72pt Abril Fatface";
 		ctx.textAlign = "left";  
 		ctx.fillText(linea1,10,100);
@@ -53,12 +55,12 @@ var crearImagen = function() {
     	ctx.drawImage(bandera, 44, 667);
     	ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
     	ctx.fillRect(307,653,448,53); 
-    	ctx.fillStyle = 'white';
+    	ctx.fillStyle = "white";
 		ctx.textAlign = "left";  
 		ctx.font = "24pt Arial";
 		ctx.fillText(usuario,470,690); 
     	ctx.drawImage(iconosRedes, 320, 653);
-    	ctx.fillStyle = 'black';
+    	ctx.fillStyle = colorTexto;
 		ctx.font = "30pt Arial";
 		ctx.fillText(urlCSD,350,770); 
     }
