@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+	<title>Creador de Imagenes (lo uso para comosediceapp)</title>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<h1>Creador de imagenes</h1>
+<p>Lo uso para crear las imagenes que subo a <a href="https://twitter.com/comosediceapp">https://twitter.com/comosediceapp</a> y <a href="https://www.instagram.com/comosediceapp/">https://www.instagram.com/comosediceapp/</a> para <a href="https://comosediceapp.com/">https://comosediceapp.com/</a>.<br>Cualquier cosa, mi mail es <a href="mailto:info@bensmithperez.com">info@bensmithperez.com</a></p>
+<label>Tipo:</label>
+<select id="tipo">
+	<option value="csd">C&oacute;mo se dice</option>
+	<option value="qs">Qu&eacute; significa</option>
+</select><br>
+<label>Palabra:</label>
+<input type="text" id="palabra"><br>
+<label>Pais:</label>
+<select id="pais">
+	<option value="1" selected>Argentina</option>
+	<option value="2">Bolivia</option>
+	<option value="3">Brasil</option>
+	<option value="4">Chile</option>
+	<option value="5">Colombia</option>
+	<option value="6">Costa Rica</option>
+	<option value="7">Cuba</option>
+	<option value="8">Ecuador</option>
+	<option value="9">El Salvador</option>
+	<option value="10">Guayana Francesa</option>
+	<option value="11">Granada</option>
+	<option value="12">Guatemala</option>
+	<option value="13">Guayana</option>
+	<option value="14">Hait&iacute;</option>
+	<option value="15">Honduras</option>
+	<option value="16">Jamaica</option>
+	<option value="17">M&eacute;xico</option>
+	<option value="18">Nicaragua</option>
+	<option value="19">Paraguay</option>
+	<option value="20">Panam&aacute;</option>
+	<option value="21">Per&uacute;</option>
+	<option value="22">Puerto Rico</option>
+	<option value="23">Rep&uacute;blica Dominicana</option>
+	<option value="24">Surinam</option>
+	<option value="25">Uruguay</option>
+	<option value="26">Venezuela</option>
+</select><br>
+<label>Fondo</label>
+<input type="file" id="fondo"><br>
+<button onclick="crearImagen();">Crear</button><br>
+
+<!-- imagenes banderas -->
+<img style="display: none;" id="1" width="180" height="100" src="img/banderas/argentina.png">
+<img style="display: none;" id="2" width="180" height="100" src="img/banderas/bolivia.png">
+<img style="display: none;" id="3" width="180" height="100" src="img/banderas/brasil.png">
+<img style="display: none;" id="4" width="180" height="100" src="img/banderas/chile.png">
+<img style="display: none;" id="5" width="180" height="100" src="img/banderas/colombia.png">
+<img style="display: none;" id="6" width="180" height="100" src="img/banderas/costarica.png">
+<img style="display: none;" id="7" width="180" height="100" src="img/banderas/cuba.png">
+<img style="display: none;" id="8" width="180" height="100" src="img/banderas/ecuador.png">
+<img style="display: none;" id="9" width="180" height="100" src="img/banderas/elsalvador.png">
+<img style="display: none;" id="10" width="180" height="100" src="img/banderas/guayanafrancesa.png">
+<img style="display: none;" id="11" width="180" height="100" src="img/banderas/granada.png">
+<img style="display: none;" id="12" width="180" height="100" src="img/banderas/guatemala.png">
+<img style="display: none;" id="13" width="180" height="100" src="img/banderas/guayana.png">
+<img style="display: none;" id="14" width="180" height="100" src="img/banderas/haiti.png">
+<img style="display: none;" id="15" width="180" height="100" src="img/banderas/honduras.png">
+<img style="display: none;" id="16" width="180" height="100" src="img/banderas/jamaica.png">
+<img style="display: none;" id="17" width="180" height="100" src="img/banderas/mexico.png">
+<img style="display: none;" id="18" width="180" height="100" src="img/banderas/nicaragua.png">
+<img style="display: none;" id="19" width="180" height="100" src="img/banderas/paraguay.png">
+<img style="display: none;" id="20" width="180" height="100" src="img/banderas/panama.png">
+<img style="display: none;" id="21" width="180" height="100" src="img/banderas/peru.png">
+<img style="display: none;" id="22" width="180" height="100" src="img/banderas/puertorico.png">
+<img style="display: none;" id="23" width="180" height="100" src="img/banderas/republicadominicana.png">
+<img style="display: none;" id="24" width="180" height="100" src="img/banderas/surinam.png">
+<img style="display: none;" id="25" width="180" height="100" src="img/banderas/uruguay.png">
+<img style="display: none;" id="26" width="180" height="100" src="img/banderas/venezuela.png">
+<img style="display: none;" id="iconosRedes" src="img/iconosRedes.png">
+<canvas id="resImagen" width="800" height="800">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+</body>
+</html>
